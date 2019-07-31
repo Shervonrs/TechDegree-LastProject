@@ -1,0 +1,8 @@
+// ========================
+// Buttons
+//=========================
+
+ .btn {
+   //adds color to button
+   @include butcolor ($butcolor);
+};

@@ -1,0 +1,13 @@
+// **************************************
+// components/_index.scss
+// used to import individual components
+// **************************************
+
+// import the utilities component
+@import 'mixins',
+        'variables',
+        'placeholders',
+        'functions';
+
+
+// NOTE: import other components here:

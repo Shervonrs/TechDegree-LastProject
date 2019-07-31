@@ -1,0 +1,26 @@
+// ========================
+// Images
+//=========================
+
+.img {
+  &--logo{
+    @include position;
+  }
+  &--avatar {
+    @include position;
+    width: 50%;
+    margin-top: 1.5em;
+    @include mq('m'){
+      @include flexwrap($flex:0);
+      //^ makes image fit in container
+    }
+
+  }
+  &--frame {
+    width: 100%;
+    border: 2px solid #cccccc;
+    padding: .5em;
+
+  }
+
+}

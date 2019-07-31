@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.social {
+  width:45px;
+}
+
+/* Alert */
+
+.notif {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 1.2em;
+  background-color: #f2ea98;
+  color: white;
+  border-radius: 4px;
+  justify-content: space-between;
+}
+
+.notif-banner-close {
+  margin: 0 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: center;
+}
+
+.notif p {
+  padding: .3em;
+}
+
+.message {
+  margin: 0 5px;
+}
+
+.notif-banner-close:hover {
+  color: #2D99D3;
+}

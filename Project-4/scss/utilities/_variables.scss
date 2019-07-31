@@ -1,0 +1,50 @@
+// ========================
+// Variables
+//=========================
+
+//Colors
+$white: #fff;
+
+$color-primary: #00cc99;
+$color-secondary: #80d4ff;
+$color-text: #e6e6e6;
+$color-font-primary: #576366;
+$color-font-primary-light: lighten($color-font-primary, 2%);
+
+// font
+$font-stack-primary: 'Helvetica Neue', sans-serif;
+
+//Button Colors
+$butcolor: (
+'default': $color-secondary,
+'success': #00b386,
+'error': #ff8080,
+'warning': #ff884d,
+'info': #666699,
+);
+
+//Layout
+$max-width: 1400px;
+
+//gutter
+$gutter: 1000px;
+
+//Grid Colors
+
+$themes: (
+'col--12': #80ffdf,
+'col--6': #0077b3,
+'col--4': #80e5ff,
+'col--3': #e0b3ff,
+'col--5': #79d279,
+'col--7': #d27979,
+'col--8': #ff944d,
+);
+
+
+//Breakpoints
+$breakpoints:(
+'sm': 768px,
+'m': 768px,
+'l': 1000px,
+);

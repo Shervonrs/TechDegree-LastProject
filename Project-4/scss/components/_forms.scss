@@ -1,0 +1,27 @@
+// ========================
+// forms
+//=========================
+
+//hides label names
+.form__label--hidden{
+  display: none;
+}
+
+.form__input {
+  display: block;
+  margin-top: 2em;
+  padding: .5em;
+  border: none;
+  border-bottom: .4em solid $color-primary;
+  width: 100%;
+  &:focus {
+    outline: none;
+    border-bottom: $color-primary;
+  }
+}
+
+.form {
+  @include mq('l'){
+    @include flexwrap($wrap:wrap, $dir:column, $flex:1);
+  }
+}

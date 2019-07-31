@@ -1,0 +1,79 @@
+// ========================
+// Mixins
+//=========================
+
+//centers objects
+@mixin center ($w){
+  margin: 0 auto;
+  width: $w;
+};
+
+//text align content
+@mixin align {
+  text-align: center;
+};
+
+@mixin position {
+  display: block;
+  margin: auto;
+}
+
+//$color
+//Loops over grid color variable ($theme)
+//and placeholder(%gridco) to create grid_col theme
+@mixin themes ($map) {
+  @each $theme, $color in $map {
+    &__#{$theme}.theme__colors {
+      @extend %gridco; //grid__col properties
+      background-color: $color;
+    }
+  }
+}
+
+
+//Button Color
+//Loops over button color variable ($butcolor)
+//and placeholder (%btn) to create button display
+@mixin butcolor($mapb) {
+  @each $shade, $tint in $mapb {
+    &--#{$shade}.theme__colors {
+      @extend %btn; //button properties
+      background-color: $tint;
+      flex: 0;
+    }
+  }
+}
+
+//Flex
+//Accepts multiple flexbox parameters
+@mixin flexwrap (
+$disp: flex,
+$flex: null,
+$dir: null,
+$wrap: null,
+$just: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  flex: $flex;
+}
+
+//Media Queries
+//Evaluates whether parameter corresponds to specific
+ //$breakpoint value then adjusts screen settings (small or large)
+@mixin mq ($break){
+  $value: map-get($breakpoints, $break);
+
+
+  @if $value == 'sm'{
+    @media(max-width: $value){
+      @content;
+    }
+  }
+  @else {
+    @media(min-width: $value){
+      @content;
+    }
+  }
+}

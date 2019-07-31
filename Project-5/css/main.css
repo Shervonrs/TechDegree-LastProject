@@ -1,0 +1,98 @@
+/*======= Global Elements ======= */
+* {
+  box-sizing: border-box;
+}
+
+  body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+ #searchBox {
+  width: 60%;
+  padding: 10px;;
+  border-radius: 3px;
+  border: 1px solid lightgrey;
+  margin-bottom: 2em;
+
+}
+
+
+ .container,
+ .searchbar{
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container img {
+  margin-bottom: 3em;
+  flex: 0;
+}
+
+/* SearchBox */
+
+
+.lb-nav a.lb-prev,
+.lb-nav a.lb-next {
+  opacity: 1;
+}
+
+.lightbox .lb-image{
+  border:none;
+}
+.lb-details .lb-number{
+  visibility: hidden;
+}
+
+.lightboxOverlay {
+  background-color: #333842;
+  opacity: .95;
+}
+
+
+.lb-data .lb-caption {
+  font-size: 15px;
+}
+
+/* ============ /*
+/*=== Media Query == */
+
+@media (min-width: 768px) {
+  body{
+    display: flex;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2em;
+    justify-content:center;
+  }
+
+  .container img {
+    margin-right: 3em;
+    flex: 1;
+
+}
+
+.lb-nav a.lb-prev,
+.lb-nav a.lb-next {
+  opacity: 1;
+}
+.lb-nav a.lb-prev{
+  position: absolute;
+  left: -80px;
+}
+
+.lb-nav a.lb-next{
+  position: absolute;
+  right: -80px;
+}
+}

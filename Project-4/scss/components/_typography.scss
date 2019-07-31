@@ -1,0 +1,45 @@
+// ========================
+// Typography
+//=========================
+
+.container {
+  @include center (75%);
+  font-family: $font-stack-primary;
+  color: $color-font-primary-light;
+  font-size: .95em;
+}
+
+.link {
+  color: $color-secondary;
+}
+
+.blockquote {
+  border-left: .3em solid $color-primary;
+  border-radius: 4px;
+  padding-left: 1.5em;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+  @include mq('m'){
+    font-size: 1.5em;
+  }
+}
+
+.headline--primary {
+  color: $color-primary;
+  padding-left: .5em;
+  font-weight: 500;
+  margin-bottom: 1em ;
+}
+
+.headline--secondary {
+  font-weight: lighter;
+  color: $color-font-primary;
+
+}
+.card > .headline--secondary{
+  @include mq('m'){
+    margin-top: 0;
+  }
+}
